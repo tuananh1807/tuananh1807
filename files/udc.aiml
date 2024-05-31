@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- Default greeting -->
+   
+  
+  
+  <category>
+    <pattern>HELLO</pattern>
+    <template>Chào bạn! Tôi có thể giúp gì cho bạn về du lịch hôm nay? tên của bạn là g?
+    <button>
+        <text>GỢI Ý ĐỊA ĐIỂM DU LỊCH </text>
+        <postback> GỢI Ý ĐỊA ĐIỂM DU LỊCH </postback>
+    </button>
+        <button>
+        <text>BẢO HIỂM DU LỊCH </text>
+        <postback>BẢO HIỂM DU LỊCH</postback>
+    </button>
+        <button>
+        <text>GỢI Ý KHÁCH SẠN </text>
+        <postback>GỢI Ý KHÁCH SẠN</postback>
+    </button>
+    <button>
+        <text>MẸO DU LỊCH</text>
+        <postback>MẸO DU LỊCH</postback>
+    </button>
+    <button>
+        <text> GIẤY TỜ CẦN THIẾT </text>
+        <postback>GIẤY TỜ CẦN THIẾT</postback>
+    </button>
+    </template>
+  </category>
+  <category>
+    <pattern>HI</pattern>
+    <template>Chào bạn! Bạn có muốn hỏi gì về du lịch không? tên của bạn là g?
+     <button>
+        <text>GỢI Ý ĐỊA ĐIỂM DU LỊCH </text>
+        <postback> GỢI Ý ĐỊA ĐIỂM DU LỊCH </postback>
+    </button>
+        <button>
+        <text>BẢO HIỂM DU LỊCH </text>
+        <postback>BẢO HIỂM DU LỊCH</postback>
+    </button>
+        <button>
+        <text>GỢI Ý KHÁCH SẠN </text>
+        <postback>GỢI Ý KHÁCH SẠN</postback>
+    </button>
+    <button>
+        <text>MẸO DU LỊCH</text>
+        <postback>MẸO DU LỊCH</postback>
+    </button>
+    <button>
+        <text> GIẤY TỜ CẦN THIẾT </text>
+        <postback>GIẤY TỜ CẦN THIẾT</postback>
+    </button>
+    </template>
+  </category>
+
+  <!-- Asking for travel recommendations -->
+  <category>
+    <pattern>GỢI Ý ĐỊA ĐIỂM DU LỊCH</pattern>
+    <template>
+        
+      Bạn muốn du lịch trong nước hay quốc tế?
+      <button>
+        <text>Trong Nước</text>
+        <postback>Trong nước </postback>
+    </button>
+    <button>
+        <text>Quốc tế</text>
+        <postback> quốc tế</postback>
+    </button>
+    </template>
+   
+  </category>
+  <category>
+    <pattern>TRONG NƯỚC</pattern>
+    <template>
+      Bạn có thể ghé thăm <br/>
+     <ul>
+        <li><b>Đà Nẵng:</b> Thành phố biển tuyệt đẹp với bãi biển Mỹ Khê, bán đảo Sơn Trà và cầu Rồng nổi tiếng.</li>
+        <li><b>Hội An:</b> Phố cổ với kiến trúc cổ kính, đèn lồng rực rỡ và ẩm thực đặc sắc.</li>
+        <li><b>Sapa:</b> Vùng núi với ruộng bậc thang, chợ tình Sapa và đỉnh Fansipan hùng vĩ.</li>
+        <li><b>Phú Quốc:</b> Đảo ngọc với bãi biển trắng mịn, hải sản tươi ngon và các khu nghỉ dưỡng sang trọng.</li>
+      </ul>
+       Những nơi này đều rất đẹp!
+      Xem thêm chi tiết tại 
+      <button>
+          <text>Traveloka - Vietnam</text>
+          <url>https://www.traveloka.com/vi-vn/destination/vietnam</url>
+      </button>
+      <button>
+        <text>GỢI Ý KHÁCH SẠN TRONG NƯỚC  </text>
+        <postback> GỢI Ý KHÁCH SẠN TRONG NƯỚC </postback>
+    </button>
+     </template>
+  </category>
+  <category>
+    <pattern>QUỐC TẾ</pattern>
+    <template>
+      Tôi gợi ý bạn đến<br/>
+       <ul>
+        <li><b>Nhật Bản:</b> Đất nước hoa anh đào, văn hóa truyền thống và công nghệ hiện đại.</li>
+        <li><b>Hàn Quốc:</b> Xứ sở kim chi với K-pop, làng cổ Bukchon và đảo Jeju thơ mộng.</li>
+        <li><b>Pháp:</b> Đất nước của tình yêu, tháp Eiffel, rượu vang và ẩm thực phong phú.</li>
+        <li><b>Ý:</b> Quốc gia của nghệ thuật, lịch sử với thành Rome, Venice và ẩm thực đẳng cấp.</li>
+      </ul>
+       Những quốc gia này rất nổi tiếng với du khách! 
+      Xem thêm chi tiết tại 
+      <button>
+          <text>Lonely Planet</text>
+          <url>https://www.lonelyplanet.com/</url>
+      </button>
+      <button>
+        <text>GỢI Ý KHÁCH SẠN QUỐC TẾ   </text>
+        <postback> GỢI Ý KHÁCH SẠN QUỐC TẾ  </postback>
+    </button>
+    </template>
+  </category>
+
+  <!-- Asking for travel tips -->
+   <category>
+    <pattern>MẸO DU LỊCH</pattern>
+    <template>
+      Du lịch là một trải nghiệm tuyệt vời, nhưng để có một chuyến đi suôn sẻ và thú vị, bạn cần chuẩn bị kỹ lưỡng. Dưới đây là một số mẹo du lịch hữu ích:
+
+      <b>Trước khi đi:</b>
+      <ul>
+        <li><b>Kiểm tra thời tiết:</b> Luôn kiểm tra dự báo thời tiết tại điểm đến để chuẩn bị trang phục và các vật dụng cần thiết.</li>
+        <li><b>Chuẩn bị giấy tờ tùy thân:</b> Đảm bảo rằng bạn đã mang theo hộ chiếu, visa (nếu cần), vé máy bay và các giấy tờ quan trọng khác. Sao lưu bản sao các giấy tờ này và lưu trữ ở nơi an toàn.</li>
+        <li><b>Bảo hiểm du lịch:</b> Mua bảo hiểm du lịch để bảo vệ bạn khỏi những rủi ro không mong muốn như tai nạn, ốm đau hoặc mất hành lý.</li>
+        <li><b>Tìm hiểu về điểm đến:</b> Nghiên cứu văn hóa, phong tục và các quy định của địa phương để tránh những rắc rối không đáng có.</li>
+        <li><b>Chuẩn bị thuốc dự phòng:</b> Mang theo các loại thuốc cá nhân và một số thuốc thông dụng như thuốc đau đầu, thuốc tiêu hóa và băng cá nhân.</li>
+      </ul>
+
+      <b>Trong khi đi du lịch:</b>
+      <ul>
+        <li><b>Giữ liên lạc:</b> Luôn thông báo với gia đình hoặc bạn bè về lịch trình của bạn và giữ liên lạc thường xuyên.</li>
+        <li><b>An toàn cá nhân:</b> Tránh đi lại một mình vào ban đêm và luôn giữ gìn tài sản cá nhân cẩn thận, đặc biệt ở những nơi đông người.</li>
+        <li><b>Uống đủ nước:</b> Đảm bảo uống đủ nước, đặc biệt khi du lịch đến những nơi có khí hậu nóng hoặc tham gia các hoạt động ngoài trời.</li>
+        <li><b>Thử các món ăn địa phương:</b> Trải nghiệm ẩm thực địa phương nhưng cũng cần chú ý đến vấn đề vệ sinh thực phẩm để tránh các bệnh liên quan đến tiêu hóa.</li>
+        <li><b>Bảo vệ môi trường:</b> Tôn trọng và bảo vệ môi trường địa phương bằng cách không xả rác và tuân thủ các quy định về bảo tồn thiên nhiên.</li>
+      </ul>
+
+      <b>Sau khi trở về:</b>
+      <ul>
+        <li><b>Kiểm tra sức khỏe:</b> Nếu cảm thấy không khỏe sau chuyến đi, hãy đi khám bác sĩ ngay để kiểm tra và điều trị kịp thời.</li>
+        <li><b>Chia sẻ kinh nghiệm:</b> Chia sẻ những trải nghiệm và mẹo du lịch của bạn với người thân và bạn bè, hoặc viết blog du lịch để ghi lại những kỷ niệm đáng nhớ.</li>
+      </ul>
+
+      Hy vọng những mẹo này sẽ giúp bạn có một chuyến đi an toàn và thú vị! <br/> 
+      Xem thêm mẹo tại <a href="https://www.nomadicmatt.com/travel-tips/">Nomadic Matt</a>
+    </template>
+  </category>
+  
+   <category>
+    <pattern>THUÊ XE</pattern>
+    <template>
+      Bạn có thể thuê xe để tiện di chuyển và khám phá. Tham khảo các dịch vụ thuê xe tại <a href="https://www.hertz.com/">Hertz</a> hoặc <a href="https://www.enterprise.com/">Enterprise</a>.
+    </template>
+  </category>
+
+  <!-- Asking for best time to travel -->
+  <category>
+    <pattern>THỜI GIAN TỐT NHẤT ĐỂ DU LỊCH</pattern>
+    <template>
+      Thời gian tốt nhất để du lịch phụ thuộc vào địa điểm bạn muốn đến. Bạn muốn du lịch ở đâu?
+    </template>
+  </category>
+   <category>
+    <pattern>ĐÀ NẴNG</pattern>
+    <template>
+      Đà Nẵng là một trong những điểm đến du lịch hấp dẫn nhất Việt Nam, nổi tiếng với bãi biển tuyệt đẹp, các danh lam thắng cảnh và nền văn hóa phong phú. Thời gian tốt nhất để đến Đà Nẵng là từ tháng 2 đến tháng 8 khi thời tiết rất thuận lợi với trời nắng đẹp, ít mưa, rất lý tưởng cho các hoạt động ngoài trời và tham quan.<br/>
+      
+      <b>Những điểm tham quan nổi bật ở Đà Nẵng:</b>
+      <ul>
+        <li><b>Bãi biển Mỹ Khê:</b> Được bình chọn là một trong những bãi biển đẹp nhất thế giới, với cát trắng mịn và nước biển trong xanh.</li>
+        <li><b>Bán đảo Sơn Trà:</b> Khu bảo tồn thiên nhiên với đa dạng sinh học phong phú, là nơi lý tưởng để ngắm cảnh và khám phá thiên nhiên.</li>
+        <li><b>Cầu Rồng:</b> Cây cầu nổi tiếng với thiết kế hình rồng phun lửa và nước vào cuối tuần, tạo nên một cảnh tượng ấn tượng vào ban đêm.</li>
+        <li><b>Ngũ Hành Sơn:</b> Khu vực núi đá vôi với nhiều hang động, chùa chiền và cảnh quan đẹp, thu hút nhiều du khách đến tham quan.</li>
+        <li><b>Chùa Linh Ứng:</b> Ngôi chùa lớn nhất Đà Nẵng với tượng Phật Bà Quan Âm cao 67m, nằm trên bán đảo Sơn Trà.</li>
+      </ul>
+
+      Đà Nẵng chắc chắn sẽ mang đến cho bạn những trải nghiệm khó quên!<br/>
+      Tìm hiểu thêm tại <a href="https://danangfantasticity.com/">Đà Nẵng Fantasticity</a>
+    </template>
+  </category>
+   
+  <category>
+    <pattern>HỘI AN</pattern>
+    <template>
+      Hội An là một trong những điểm đến du lịch hấp dẫn nhất Việt Nam, nổi tiếng với phố cổ đẹp và nền văn hóa phong phú. Thời gian tốt nhất để đến Hội An là từ tháng 2 đến tháng 4 và từ tháng 8 đến tháng 10 khi thời tiết ôn hòa và thuận lợi cho các hoạt động tham quan và khám phá.<br/>
+      
+      <b>Những điểm tham quan nổi bật ở Hội An:</b>
+      <ul>
+        <li><b>Phố cổ Hội An:</b> Khu phố cổ được UNESCO công nhận là Di sản Văn hóa Thế giới, với kiến trúc cổ kính, đèn lồng rực rỡ và những con hẻm nhỏ duyên dáng.</li>
+        <li><b>Chùa Cầu:</b> Cây cầu có mái che độc đáo, được xây dựng từ thế kỷ 16 và là biểu tượng của Hội An.</li>
+        <li><b>Nhà cổ Tấn Ký:</b> Một ngôi nhà cổ được bảo tồn tốt, thể hiện rõ nét kiến trúc truyền thống của người Việt.</li>
+        <li><b>Hội quán Phúc Kiến:</b> Ngôi đền thờ bà Thiên Hậu, nơi cộng đồng người Hoa thường xuyên tổ chức các lễ hội văn hóa.</li>
+        <li><b>Biển Cửa Đại:</b> Bãi biển tuyệt đẹp cách phố cổ khoảng 5 km, là nơi lý tưởng để thư giãn và tận hưởng không khí biển.</li>
+      </ul>
+
+      <b>Các hoạt động thú vị tại Hội An:</b>
+      <ul>
+        <li><b>Đi thuyền trên sông Thu Bồn:</b> Thưởng ngoạn cảnh đẹp của dòng sông và các làng nghề ven sông.</li>
+        <li><b>Khám phá ẩm thực:</b> Thưởng thức các món ăn đặc sản như cao lầu, mì Quảng, bánh bao bánh vạc và hến xúc bánh tráng.</li>
+        <li><b>Tham gia lớp học nấu ăn:</b> Trải nghiệm học nấu các món ăn truyền thống tại các lớp học nấu ăn dành cho du khách.</li>
+        <li><b>Thả đèn hoa đăng:</b> Một hoạt động lãng mạn vào buổi tối khi thả đèn hoa đăng trên sông Hoài.</li>
+        <li><b>Tham quan làng gốm Thanh Hà:</b> Tìm hiểu về quy trình làm gốm truyền thống và tham gia tự tay làm gốm.</li>
+      </ul>
+
+      Hội An chắc chắn sẽ mang đến cho bạn những trải nghiệm khó quên!<br/>
+      Tìm hiểu thêm tại <a href="https://hoianworldheritage.org.vn/">Hội An World Heritage</a>
+    </template>
+  </category>
+  <category>
+    <pattern>SAPA</pattern>
+    <template>
+      Sapa là một điểm đến du lịch nổi tiếng ở vùng núi phía bắc Việt Nam, được biết đến với cảnh quan hùng vĩ, ruộng bậc thang xanh mướt và văn hóa độc đáo của các dân tộc thiểu số. Thời gian tốt nhất để đến Sapa là từ tháng 3 đến tháng 5 và từ tháng 9 đến tháng 11 khi thời tiết ôn hòa, khô ráo và cảnh sắc thiên nhiên đẹp nhất.<br/>
+      
+      <b>Những điểm tham quan nổi bật ở Sapa:</b>
+      <ul>
+        <li><b>Đỉnh Fansipan:</b> Được mệnh danh là "nóc nhà Đông Dương", Fansipan cao 3.143m, là điểm leo núi lý tưởng cho những ai yêu thích mạo hiểm.</li>
+        <li><b>Thung lũng Mường Hoa:</b> Nổi tiếng với các thửa ruộng bậc thang đẹp mắt, đặc biệt vào mùa lúa chín và mùa nước đổ.</li>
+        <li><b>Bản Cát Cát:</b> Làng truyền thống của người H'Mông, nơi du khách có thể tìm hiểu về văn hóa và đời sống của người dân tộc thiểu số.</li>
+        <li><b>Nhà thờ đá Sapa:</b> Công trình kiến trúc cổ điển từ thời Pháp thuộc, nằm ngay trung tâm thị trấn Sapa.</li>
+        <li><b>Chợ Sapa:</b> Nơi bày bán các sản phẩm thủ công, đồ ăn đặc sản và các sản phẩm nông nghiệp của địa phương.</li>
+      </ul>
+
+      <b>Các hoạt động thú vị tại Sapa:</b>
+      <ul>
+        <li><b>Leo núi và trekking:</b> Sapa là điểm đến lý tưởng cho các hoạt động leo núi, trekking qua các bản làng, đồi núi và thung lũng.</li>
+        <li><b>Khám phá ẩm thực:</b> Thưởng thức các món ăn đặc sản của Sapa như lẩu cá hồi, thắng cố, cơm lam và thịt trâu gác bếp.</li>
+        <li><b>Tham quan chợ phiên:</b> Các chợ phiên ở Sapa như chợ Bắc Hà, chợ Cốc Ly, là nơi giao lưu văn hóa và mua bán của người dân tộc.</li>
+        <li><b>Tắm lá thuốc của người Dao Đỏ:</b> Trải nghiệm phương pháp trị liệu cổ truyền với lá thuốc của người Dao Đỏ tại các bản làng quanh Sapa.</li>
+        <li><b>Tham gia lễ hội:</b> Tham gia các lễ hội văn hóa truyền thống của người dân tộc thiểu số như lễ hội Gầu Tào, lễ hội Lồng Tồng.</li>
+      </ul>
+
+      Sapa chắc chắn sẽ mang đến cho bạn những trải nghiệm khó quên!<br/>
+      Tìm hiểu thêm tại <a href="https://sapa-tourism.com/">Sapa Tourism</a>
+    </template>
+  </category>
+  
+<category>
+    <pattern>PHÁP</pattern>
+    <template>
+      Thời gian đẹp nhất để du lịch Pháp là từ tháng 4 đến tháng 6 hoặc từ tháng 9 đến tháng 11. Đây là những thời điểm thời tiết ôn hòa, dễ chịu và không quá đông khách du lịch, giúp bạn có trải nghiệm tốt nhất.<br/>
+
+      <b>Những điểm đến nổi bật ở Pháp:</b>
+      <ul>
+        <li><b>Paris:</b> Thủ đô của Pháp với tháp Eiffel, bảo tàng Louvre, nhà thờ Đức Bà và đại lộ Champs-Élysées.</li>
+        <li><b>Versailles:</b> Cung điện Versailles nổi tiếng với kiến trúc lộng lẫy và các khu vườn rộng lớn.</li>
+        <li><b>Nice:</b> Thành phố ven biển ở vùng Côte d'Azur, nổi tiếng với bãi biển đẹp và lễ hội carnival.</li>
+        <li><b>Provence:</b> Khu vực miền nam nước Pháp với cánh đồng hoa oải hương, thị trấn cổ và ẩm thực địa phương tuyệt vời.</li>
+        <li><b>Bordeaux:</b> Vùng đất của rượu vang, với những vườn nho bạt ngàn và các lâu đài cổ kính.</li>
+        <li><b>Chamonix:</b> Khu trượt tuyết nổi tiếng dưới chân núi Mont Blanc, lý tưởng cho các hoạt động mùa đông.</li>
+      </ul>
+
+      <b>Các hoạt động thú vị tại Pháp:</b>
+      <ul>
+        <li><b>Tham quan các bảo tàng:</b> Pháp có nhiều bảo tàng nổi tiếng như Louvre, Orsay và Pompidou.</li>
+        <li><b>Khám phá ẩm thực:</b> Thưởng thức các món ăn Pháp nổi tiếng như baguette, croissant, pho mát, và rượu vang.</li>
+        <li><b>Du thuyền trên sông Seine:</b> Một trải nghiệm lãng mạn khi ngắm nhìn Paris từ sông Seine.</li>
+        <li><b>Tham quan các chợ:</b> Khám phá các chợ truyền thống của Pháp như chợ hoa ở Nice hay chợ Giáng sinh ở Strasbourg.</li>
+        <li><b>Tham gia lễ hội:</b> Tham gia các lễ hội đặc sắc như lễ hội ánh sáng ở Lyon, lễ hội hoa oải hương ở Provence.</li>
+      </ul>
+
+      Pháp là một đất nước tuyệt vời với nhiều điều thú vị đang chờ bạn khám phá!<br/>
+      Xem thêm chi tiết tại <a href="https://france.fr/">France.fr</a>
+    </template>
+  </category>
+   <category>
+    <pattern>NHẬT BẢN</pattern>
+    <template>
+      Nhật Bản là một quốc gia tuyệt vời để khám phá, nổi tiếng với văn hóa truyền thống độc đáo, cảnh quan thiên nhiên tuyệt đẹp và công nghệ hiện đại. Thời gian tốt nhất để đến Nhật Bản là vào mùa xuân (tháng 3 đến tháng 5) và mùa thu (tháng 9 đến tháng 11) khi thời tiết dễ chịu và cảnh sắc thiên nhiên đẹp nhất.<br/>
+
+      <b>Những điểm tham quan nổi bật ở Nhật Bản:</b>
+      <ul>
+        <li><b>Tokyo:</b> Thủ đô sôi động với các khu phố hiện đại, đền thờ cổ kính, công viên và khu mua sắm nổi tiếng.</li>
+        <li><b>Kyoto:</b> Thành phố lịch sử với hàng trăm ngôi đền và chùa, nổi tiếng nhất là Kinkaku-ji (Chùa Vàng) và Fushimi Inari-taisha.</li>
+        <li><b>Osaka:</b> Thành phố nổi tiếng với ẩm thực đường phố, lâu đài Osaka và khu vui chơi Universal Studios Japan.</li>
+        <li><b>Nara:</b> Thành phố cổ kính với đền Todai-ji và công viên Nara, nơi bạn có thể thấy những con hươu đi lại tự do.</li>
+        <li><b>Hokkaido:</b> Đảo phía bắc với cảnh quan thiên nhiên tuyệt đẹp, nổi tiếng với các khu trượt tuyết và lễ hội tuyết Sapporo.</li>
+      </ul>
+
+      <b>Các hoạt động thú vị tại Nhật Bản:</b>
+      <ul>
+        <li><b>Ngắm hoa anh đào:</b> Mùa xuân là thời điểm lý tưởng để chiêm ngưỡng hoa anh đào nở rộ tại các công viên và khu vườn trên khắp đất nước.</li>
+        <li><b>Thưởng thức ẩm thực:</b> Nhật Bản nổi tiếng với sushi, ramen, tempura và nhiều món ăn ngon khác.</li>
+        <li><b>Tắm onsen:</b> Trải nghiệm tắm suối nước nóng truyền thống tại các khu nghỉ dưỡng onsen.</li>
+        <li><b>Tham quan các lễ hội:</b> Nhật Bản có nhiều lễ hội văn hóa và truyền thống, chẳng hạn như lễ hội Gion ở Kyoto và lễ hội Nebuta ở Aomori.</li>
+        <li><b>Mua sắm:</b> Khám phá các khu mua sắm sầm uất như Ginza ở Tokyo, Shinsaibashi ở Osaka và nhiều trung tâm thương mại khác.</li>
+      </ul>
+
+      Nhật Bản chắc chắn sẽ mang đến cho bạn những trải nghiệm khó quên!<br/>
+      Tìm hiểu thêm tại <a href="https://www.japan.travel/">Japan National Tourism Organization</a>
+    </template>
+  </category>
+
+  <!-- Asking about travel documents -->
+  <category>
+    <pattern>GIẤY TỜ CẦN THIẾT</pattern>
+    <template>
+      Khi du lịch quốc tế, bạn cần chuẩn bị hộ chiếu, visa (nếu cần), vé máy bay, và bảo hiểm du lịch. <br/> Tham khảo thêm tại <a href="https://www.iatatravelcentre.com/">IATA Travel Centre</a>
+    </template>
+  </category>
+
+  <!-- Inquiring about travel costs -->
+
+       <category>
+    <pattern>* CHI PHÍ DU LỊCH</pattern>
+    <template>Chi phí du lịch sẽ phụ thuộc vào điểm đến, thời gian lưu trú và phong cách du lịch của bạn. Bạn có thể ước tính chi phí tại 
+    <a href="https://www.budgetyourtrip.com/">Budget Your Trip</a>.</template>
+  </category>
+
+
+  <!-- Asking about travel insurance -->
+  <category>
+    <pattern>BẢO HIỂM DU LỊCH</pattern>
+    <template>
+      Bảo hiểm du lịch là rất quan trọng để bảo vệ bạn khỏi những rủi ro bất ngờ. Tìm hiểu thêm về các loại bảo hiểm du lịch tại <a href="https://www.insuremytrip.com/">InsureMyTrip</a>.
+    </template>
+  </category>
+
+  <!-- Asking for hotel recommendations -->
+  <category>
+    <pattern>GỢI Ý KHÁCH SẠN</pattern>
+    <template>
+      Bạn có thể tìm khách sạn phù hợp với nhu cầu của mình tại <a href="https://www.booking.com/">Booking.com</a> hoặc <a href="https://www.agoda.com/">Agoda</a>.
+    </template>
+  </category>
+  
+   <category>
+    <pattern>GỢI Ý KHÁCH SẠN TRONG NƯỚC </pattern>
+    <template>
+      BẠN CÓ THỂ THAM KHẢO CÁC GỢI Ý VỀ KHÁCH SẠN NẾU CẦN NHÉ
+     <button>
+        <text> GỢI Ý KHÁCH SẠN ĐÀ NẴNG </text>
+        <postback> GỢI Ý KHÁCH SẠN ĐÀ NẴNG </postback>
+    </button>
+    <button>
+        <text> GỢI Ý KHÁCH SẠN HỘI AN  </text>
+        <postback> GỢI Ý KHÁCH SẠN HỘI ANAN</postback>
+    </button>
+    <button>
+        <text> GỢI Ý KHÁCH SẠN SAPA</text>
+        <postback> GỢI Ý KHÁCH SẠN SAPA  </postback>
+    </button>
+    <button>
+        <text> GỢI Ý KHÁCH SẠN PHÚ QUỐC </text>
+        <postback> GỢI Ý KHÁCH SẠN PHÚ QUỐC  </postback>
+    </button>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>GỢI Ý KHÁCH SẠN QUỐC TẾ </pattern>
+    <template>
+      BẠN CÓ THỂ THAM KHẢO CÁC GỢI Ý VỀ KHÁCH SẠN NẾU CẦN NHÉ
+     <button>
+        <text> GỢI Ý KHÁCH SẠN PHÁP </text>
+        <postback> GỢI Ý KHÁCH SẠN PHÁP </postback>
+    </button>
+    <button>
+        <text> GỢI Ý KHÁCH SẠN Ý</text>
+        <postback> GỢI Ý KHÁCH SẠN Ý </postback>
+    </button>
+    <button>
+        <text> GỢI Ý KHÁCH SẠN NHẬT BẢN </text>
+        <postback> GỢI Ý KHÁCH SẠN NHẬT BẢN  </postback>
+    </button>
+    <button>
+        <text> GỢI Ý KHÁCH SẠN HÀN QUỐC </text>
+        <postback> GỢI Ý KHÁCH SẠN HÀN  QUỐC  </postback>
+    </button>
+    </template>
+  </category>
+  
+  
+  <category>
+    <pattern> tôi muốn ăn trai cây *</pattern>
+    <template>
+        <ul>
+            <li>Mận Sapa: Mận Sapa là loại mận đặc sản của vùng núi Sapa, có hương vị đặc trưng và ngọt ngào. Mận Sapa thường được sử dụng để làm mứt, nước ép hoặc ăn tươi.</li>
+            <li>Táo Sapa: Táo Sapa cũng là một loại trái cây đặc sản của vùng núi này. Táo có vị ngọt và giòn, thường được sử dụng để làm rượu táo mèo hoặc ăn tươi.</li>
+            <li>Dâu Sapa: Dâu Sapa được trồng ở những khu vườn đất ngập nước, có hương vị đậm đà và ngọt ngào. Dâu Sapa thường được sử dụng để làm mứt, sinh tố hoặc ăn tươi.</li>
+            <li>Cẩm sơn: Cẩm sơn là loại trái cây có màu đỏ tươi và hình dáng giống như quả mâm xôi. Trái này có vị ngọt và thơm, thường được ăn tươi hoặc làm mứt.</li>
+            <li>Lê Sapa: Lê Sapa có vị ngọt và giòn, thường được sử dụng để ăn tươi hoặc làm mứt.</li>
+            <li>Cherry: Sapa cũng có một số vườn cherry, mang lại trái cây ngon và bổ dưỡng cho du khách.</li>
+        </ul>
+    </template>
+</category>
+
+
+<category>
+    <pattern> Tôi muốn được tư vấn về món ăn *</pattern>
+    <template>
+        <think>
+            <set name = "State"><star /></set>
+        </think>
+        <condition name = "State" value = "Pháp"> <ul>
+            <li>Baguette: Bánh mì pháp được làm từ bột mỳ mịn và có vỏ giòn.</li>
+            <li>Coq au Vin: Gà hầm trong rượu vang đỏ cùng với nấm và hành tây.</li>
+            <li>Ratatouille: Một món rau củ hấp dẫn chứa cà chua, cà tím, cà rốt, bắp cải và hành tây.</li>
+            <li>Crème Brûlée: Một loại bánh ngọt với lớp đường caramel nướng trên mặt.</li>
+            <li>Escargot: Ốc sên được nướng với hành tỏi và bơ, thường được phục vụ trong vỏ ốc đặc biệt.</li>
+        </ul> </condition>
+        <condition name = "State" value = "ý"> <ul>
+            <li>Pizza Margherita: Một loại pizza cổ điển với sốt cà chua, phô mai mozzarella và lá basil.</li>
+            <li>Pasta Carbonara: Một món pasta với sốt từ trứng, phô mai, thịt muối, và tiêu đen.</li>
+            <li>Risotto: Một loại món cơm Ý nấu chín trong nước dùng với các loại gia vị và nguyên liệu khác nhau như hải sản, nấm hoặc thịt.</li>
+            <li>Tiramisu: Một loại bánh ngọt Ý với lớp kem từ phô mai mascarpone và bánh mì ladyfingers ngâm trong cà phê.</li>
+            <li>Gelato: Một loại kem Ý thơm ngon và mềm mại, có nhiều hương vị đa dạng.</li>
+        </ul></condition>
+        <condition name = "State" value = "London"> <ul>
+            <li>Big Ben và Cung điện Westminster: Biểu tượng của London với đồng hồ lớn và kiến trúc hoành tráng.</li>
+            <li>Tháp London: Một trong những địa điểm du lịch nổi tiếng nhất của thành phố với lịch sử lâu đời và tầm nhìn tuyệt vời từ trên cao.</li>
+            <li>Buckingham Palace: Nơi cư trú của hoàng gia Anh với những buổi giao lưu thú vị và lễ cất cánh của quân đội.</li>
+            <li>Bảo tàng British Museum: Một trong những bảo tàng lớn nhất thế giới với bộ sưu tập văn hóa và lịch sử đa dạng.</li>
+            <li>Khu thương mại Covent Garden: Một khu phố với các cửa hàng, nhà hàng, và biểu diễn nghệ thuật.</li>
+        </ul></condition>
+        <condition name = "State" value = "Hàn Quốc"><ul>
+            <li>Seoul: Thủ đô năng động với các khu mua sắm hiện đại như Myeongdong và khu vực lịch sử như Gyeongbokgung Palace.</li>
+            <li>Jeju Island: Một hòn đảo thiên nhiên tuyệt đẹp với cảnh quan đa dạng, hòn đảo nổi tiếng với hang động lava và bãi biển đẹp như Hyeopjae và Jungmun.</li>
+            <li>Bukchon Hanok Village: Một khu phố cổ truyền thống với những ngôi nhà Hanok cổ kính, tạo nên không khí đặc biệt của Hàn Quốc.</li>
+            <li>Busan: Một thành phố ven biển sôi động với bãi biển Haeundae, thị trấn lịch sử Gamcheon và chợ Jagalchi nổi tiếng.</li>
+            <li>Gyeongju: Một thành phố cổ kính với các di tích lịch sử quan trọng như Bulguksa Temple và Seokguram Grotto.</li>
+        </ul></condition>
+    </template>
+</category>
+
+
+
+<category>
+  <pattern>tên của tôi là *</pattern>
+  <template>
+   hi <set name="username"><star/></set>
+       !Tôi có thể giúp gì cho bạn tôi là dulichchat tư vấn về các điểm du lịch nổi tiếng trong và ngoài nước.
+   
+  </template>
+</category>
+<category>
+  <pattern>Bạn còn nhớ tên tôi chứ </pattern>
+  <template>
+      Dulichchat vẫn còn nhớ tên bạn mà, tên của bạn là
+     <get name="username"/>
+  </template>
+</category>
+
+<category>
+  <pattern>Tôi nghe nói *</pattern>
+  <template>
+    Đúng vậy ở Đà Lạt 
+    <get name="favorite"/>
+    bạn <get name="username"/> có thể lựa chọn nơi đó là điểm đến du lịch vào tháng 4 này cũng được
+  </template>
+</category>
+  
+  <category>
+  <pattern>GỢI Ý KHÁCH SẠN ĐÀ NẴNG</pattern>
+  <template>
+    Đà Nẵng có nhiều khách sạn tuyệt vời. Bạn có thể xem các lựa chọn tại <a href="https://www.booking.com/">Booking.com</a> hoặc <a href="https://www.agoda.com/">Agoda</a>.
+  </template>
+</category>
+<category>
+  <pattern>GỢI Ý KHÁCH SẠN HỘI AN</pattern>
+  <template>
+    Hội An có nhiều lựa chọn khách sạn phong phú. Bạn có thể tìm thông tin chi tiết và đặt phòng tại <a href="https://www.booking.com/">Booking.com</a> hoặc <a href="https://www.agoda.com/">Agoda</a>.
+  </template>
+</category>
+<category>
+  <pattern>GỢI Ý KHÁCH SẠN SAPA</pattern>
+  <template>
+    Sapa có các resort và khách sạn gần với thiên nhiên. Bạn có thể tìm các lựa chọn tại <a href="https://www.booking.com/">Booking.com</a> hoặc <a href="https://www.agoda.com/">Agoda</a>.
+  </template>
+</category>
+<category>
+  <pattern>GỢI Ý KHÁCH SẠN PHÚ QUỐC</pattern>
+  <template>
+    Phú Quốc có nhiều resort và khách sạn ven biển. Bạn có thể xem và đặt phòng tại <a href="https://www.booking.com/">Booking.com</a> hoặc <a href="https://www.agoda.com/">Agoda</a>.
+  </template>
+</category>
+
+<category>
+  <pattern>GỢI Ý KHÁCH SẠN NHẬT BẢN</pattern>
+  <template>
+    Nhật Bản có nhiều lựa chọn khách sạn chất lượng. Bạn có thể tìm thông tin chi tiết và đặt phòng tại <a href="https://www.booking.com/">Booking.com</a> hoặc <a href="https://www.agoda.com/">Agoda</a>.
+  </template>
+</category>
+<category>
+  <pattern>GỢI Ý KHÁCH SẠN HÀN QUỐC</pattern>
+  <template>
+    Hàn Quốc có nhiều khách sạn ở các thành phố lớn như Seoul và Busan. Bạn có thể tìm thông tin chi tiết và đặt phòng tại <a href="https://www.booking.com/">Booking.com</a> hoặc <a href="https://www.agoda.com/">Agoda</a>.
+  </template>
+</category>
+<category>
+  <pattern>GỢI Ý KHÁCH SẠN PHÁP</pattern>
+  <template>
+    Pháp có các khách sạn đẳng cấp và sang trọng. Bạn có thể xem và đặt phòng tại <a href="https://www.booking.com/">Booking.com</a> hoặc <a href="https://www.agoda.com/">Agoda</a>.
+  </template>
+</category>
+<category>
+  <pattern> GỢI Ý KHÁCH SẠN Ý</pattern>
+  <template>
+    Ý có nhiều khách sạn tại các thành phố lớn như Rome, Florence và Venice. Bạn có thể tìm các lựa chọn tại <a href="https://www.booking.com/">Booking.com</a> hoặc <a href="https://www.agoda.com/">Agoda</a>.
+  </template>
+</category>
+  <!-- Default response -->
+  <category>
+    <pattern>*</pattern>
+    <template>Xin lỗi, tôi chưa hiểu câu hỏi của bạn. Bạn có thể hỏi lại được không?</template>
+  </category>
+   <category>
+      <pattern> Tôi muốn ăn món ngon ở SAPA </pattern>
+      <template> được tôi sẽ giúp bạn tìm ra món ngon <set name = "topic"> ở Sapa  </set> bạn nói cũ thể bạn muốn ăn món như thế nào mô tả để tôi biết nhé ví dụ: tôi muốn ăn món đặc sản ở sapa hoặc tôi muốn án trái cây ngon ở Sapa
+      </template>  
+   </category>
+   
+   <topic name = "ở Sapa">
+      <category>
+         <pattern> * </pattern>
+         <template> ở sapa có Đặc sản Rượu táo mèo Sapa, Măng Sap, Cơm la, Cá sủi Sapa</template>
+      </category>
+      
+   </topic>
+
+</aiml>
